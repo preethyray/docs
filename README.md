@@ -1,6 +1,7 @@
-# Mintlify Starter Kit
+# Specbee starter kit
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+
+Click on `Use this template` to copy the Specbee starter kit. The starter kit contains examples including
 
 - Guide pages
 - Navigation
@@ -21,12 +22,20 @@ Run the following command at the root of your documentation (where mint.json is)
 ```
 mintlify dev
 ```
+### Live Url
 
-### Publishing Changes
+https://specbeeconsultingservices.mintlify.app/introduction
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+### Migration content
 
-#### Troubleshooting
+https://specbeeconsultingservices.mintlify.app/api-reference/a-companies/get-current-company
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+use the following command to migrate
+
+```
+npx @mintlify/scraping@latest openapi-file rippling-support.yml -o api-reference
+```
+
+
+
+
